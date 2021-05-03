@@ -9,9 +9,9 @@ class Alert(models.Model):
     """
     Model for storing alerts
     """
-    age_group = models.CharField(max_length=255, default="Age 18 to 44")
-    state = models.CharField(max_length=255)
-    region = models.CharField(max_length=255)
+    age_group = models.CharField(max_length=255, default="")
+    state = models.CharField(max_length=255, default="")
+    region = models.CharField(max_length=255, default="")
 
 
 class UserManager(BaseUserManager):
